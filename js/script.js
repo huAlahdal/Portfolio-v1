@@ -1,10 +1,5 @@
-// JavaScript код
+const header = document.querySelector('header');
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+window.addEventListener('scroll', () => {
+    header.classList.toggle('sticky', window.scrollY > 100);
 }
