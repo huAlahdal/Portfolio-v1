@@ -14,7 +14,7 @@ menu.onclick = () => {
 
 window.onscroll = () => {
     menu.classList.remove("bx-x")
-    navlist.classList.toggle("open")
+    navlist.classList.remove("open")
 
     // var element = document.getElementById('services');
     // if (isElementInViewport(element)) {
